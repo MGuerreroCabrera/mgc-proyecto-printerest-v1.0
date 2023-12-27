@@ -1,5 +1,5 @@
 {
-  "name": "mgc-proyecto-pinterest-v1.0",
+  "name": "mgc-async-components-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "unsplash-js": "^7.0.18"
   }
 }

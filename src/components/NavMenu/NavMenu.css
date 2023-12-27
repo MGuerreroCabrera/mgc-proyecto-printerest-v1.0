@@ -1,0 +1,36 @@
+#navMenu {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-s);
+}
+
+#navMenu li {    
+    cursor: pointer;
+    font-size: var(--mgc-font-size-xs);
+    padding: var(--mgc-padding-xs);
+    color: var(--mgc-color-grey);
+    border-radius: var(--mgc-border-radius-xl);
+}
+
+#navMenu li:hover {
+    background-color: var(--mgc-color-light-grey);
+}
+
+#navMenu li:first-child {
+    color: var(--mgc-color-white);
+    background-color: var(--mgc-color-black);
+}
+
+
+@media (max-width: 850px)
+{
+    #navMenu {
+        gap: var(--mgc-gap-xs);
+    }
+    #navMenu li {    
+        font-size: var(--mgc-font-size-xxs);
+        padding: var(--mgc-padding-xs);
+    }
+}

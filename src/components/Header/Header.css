@@ -1,0 +1,9 @@
+header {
+    width: 100vw;    
+    padding: var(--mgc-padding-l);
+}
+
+#logoPhinterest {
+    width: 30px;
+    object-fit: contain;
+}

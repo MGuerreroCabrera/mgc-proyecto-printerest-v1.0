@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    min-height: 10svh;
+    padding: var(--mgc-padding-xl) 0px;
+    background-color: var(--mgc-color-light-grey);
+    bottom: 0; 
+}
+
+footer > h3 {
+    color: var(--mgc-color-white);
+}
