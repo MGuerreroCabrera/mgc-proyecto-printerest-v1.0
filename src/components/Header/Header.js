@@ -13,7 +13,7 @@ export const printHeader = () => {
 
     // Añadir logotipo
     const logoHTML = document.createElement("img");
-    logoHTML.src = "../../../public/logo-phinterest.png";
+    logoHTML.src = "public/logo-phinterest.png";
     logoHTML.alt = "Logo phinterest";
     logoHTML.id = "logoPhinterest";
     headerHTML.appendChild(logoHTML);
