@@ -21,7 +21,7 @@
 }
 
 .search-button {
-    background-image: url("./public/lupa.png");
+    background-image: url("../../../public/lupa.png");
     background-repeat:no-repeat;
     height:40px;
     width:40px;
