@@ -11,7 +11,7 @@ const appDiv = document.querySelector("#app");
 export const SearchForm = () => {
 
     // Declaro div a devolver con el input y el button
-    const divSearch = document.querySelector(".searchFormContainer");
+    const divSearch = document.createElement("div");
     divSearch.className = "div-search-container";
 
     // Declaro elemento HTML input
@@ -34,9 +34,9 @@ export const SearchForm = () => {
         const appDiv = document.querySelector("#app");
         appDiv.innerHTML = ``;
         // 3. Pintar el header
-        //const divSearch = printHeader();
+        const divSearch = printHeader();
         // 4. Inyecto el header en la aplicación
-        //appDiv.appendChild(divSearch);
+        appDiv.appendChild(divSearch);
         // 5. Llamar a la función que pinta las imágenes
         printPhotos(searchValue);
         // 6. Pintar el footer

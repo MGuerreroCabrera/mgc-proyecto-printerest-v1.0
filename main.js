@@ -1,25 +1,14 @@
 import { printFooter } from './src/components/Footer/Footer';
 import { printHeader } from './src/components/Header/Header';
+import { SearchForm } from './src/components/SearchForm/SearchForm';
 import './style.css';
+
+// inserto el buscador de imágenes
+const searchForm = SearchForm();
+
 
 // Declaro la variable que será la capa #app donde irá el contenido del sitio.
 const appDiv = document.querySelector("#app");
-
-// Declaro la variable headerHTML para incluir el header en la aplicación
-const headerHTML = printHeader();
-
-// Inyecto el header en la aplicación
-appDiv.appendChild(headerHTML);
-
-/******** */
-const headerAdded = document.querySelector("#appHeader");
-
-const imgLogo = document.createElement("img");
-imgLogo.src = "./public/logo-phinterest.png";
-
-headerAdded.appendChild(imgLogo);
-
-/******** */
 
 // Función que pinta las imágenes por primera vez en la página.
 export const printPhotos = async (searchFor) => {

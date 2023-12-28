@@ -92,6 +92,64 @@ html {
     align-items: center;
 }
 
+/* Estilos para el header */
+
+#appHeader {
+    width: 100vw;    
+    padding: var(--mgc-padding-l);
+}
+
+#logoPhinterest {
+    width: 30px;
+    object-fit: contain;
+}
+
+#navMenu {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-s);
+}
+
+#navMenu li {    
+    cursor: pointer;
+    font-size: var(--mgc-font-size-xs);
+    padding: var(--mgc-padding-xs);
+    color: var(--mgc-color-grey);
+    border-radius: var(--mgc-border-radius-xl);
+}
+
+#navMenu li:hover {
+    background-color: var(--mgc-color-light-grey);
+}
+
+#navMenu li:first-child {
+    color: var(--mgc-color-white);
+    background-color: var(--mgc-color-black);
+}
+
+.div-search-container {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    gap: var(--mgc-gap-xs);
+}
+
+.icons-list-header {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-m);
+}
+
+.icons-list img {
+    width: 15px;
+}
+
+/* Fin estilos para el header */
+
 #app {
     width: 100%;    
     min-height: 100svh;
