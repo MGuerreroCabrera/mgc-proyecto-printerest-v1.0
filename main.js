@@ -11,6 +11,16 @@ const headerHTML = printHeader();
 // Inyecto el header en la aplicación
 appDiv.appendChild(headerHTML);
 
+/******** */
+const headerAdded = document.querySelector("#appHeader");
+
+const imgLogo = document.createElement("img");
+imgLogo.src = "./public/logo-phinterest.png";
+
+headerAdded.appendChild(imgLogo);
+
+/******** */
+
 // Función que pinta las imágenes por primera vez en la página.
 export const printPhotos = async (searchFor) => {
 
