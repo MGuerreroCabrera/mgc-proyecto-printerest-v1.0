@@ -27,15 +27,20 @@ export const printPhotos = async (searchFor) => {
         try {
             const response = await fetch(urlFetch);        
             const resJSON = await response.json();
-            for (const element of resJSON) {
-                const altDescription = element.alt_description;
-                const src = element.urls.small;
-                const appDiv = document.querySelector("#app");
-                const img = document.createElement("img");
-                img.src = src;
-                img.alt = altDescription;
-                mainHTML.appendChild(img);
-            }
+            if(resJSON.length === 0) {
+                const input = document.querySelector("#searchImput");
+                input.value = "No se han encontrado elementos para el criterio introducido";
+            }else{
+                for (const element of resJSON) {
+                    const altDescription = element.alt_description;
+                    const src = element.urls.small;
+                    const appDiv = document.querySelector("#app");
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.alt = altDescription;
+                    mainHTML.appendChild(img);
+                }
+            }            
         } catch (error) {
             console.log(error);
         }     
@@ -44,15 +49,20 @@ export const printPhotos = async (searchFor) => {
         try {
             const response = await fetch(urlFetch);
             const resJSON = await response.json();
-            for (const element of resJSON.results) {
-                const altDescription = element.alt_description;
-                const src = element.urls.small;
-                const appDiv = document.querySelector("#app");
-                const img = document.createElement("img");
-                img.src = src;
-                img.alt = altDescription;
-                mainHTML.appendChild(img);
-            }
+            if(resJSON.results.length === 0) {
+                const input = document.querySelector("#searchImput");
+                input.value = "No se han encontrado elementos para el criterio introducido";
+            }else{
+                for (const element of resJSON.results) {
+                    const altDescription = element.alt_description;
+                    const src = element.urls.small;
+                    const appDiv = document.querySelector("#app");
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.alt = altDescription;
+                    mainHTML.appendChild(img);
+                }
+            }            
         } catch (error) {
             console.log(error);
         }

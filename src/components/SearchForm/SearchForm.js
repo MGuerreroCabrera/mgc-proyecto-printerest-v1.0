@@ -33,13 +33,8 @@ export const SearchForm = () => {
         // 2. Limpiar el div #app
         const appDiv = document.querySelector("#app");
         appDiv.innerHTML = ``;
-        // 3. Pintar el header
-        //const divSearch = printHeader();
-        // 4. Inyecto el header en la aplicación
-        //appDiv.appendChild(divSearch);
-        // 5. Llamar a la función que pinta las imágenes
         printPhotos(searchValue);
-        // 6. Pintar el footer
+        // 3. Pintar el footer
         const footerHTML = printFooter();
         appDiv.appendChild(footerHTML);
     });

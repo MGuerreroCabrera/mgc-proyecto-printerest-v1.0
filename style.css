@@ -209,10 +209,3 @@ main{
         margin-right: var(--mgc-padding-xs);
     }
 }
-
-@media (max-width: 600px)
-{
-    /* .div-search-container {
-        display: none;
-    } */
-}
