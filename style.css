@@ -52,6 +52,7 @@ html {
     --mgc-padding-l: 40px;
     --mgc-padding-xl: 50px;
   
+    --mgc-gap-xxs: 5px;
     --mgc-gap-xs: 10px;
     --mgc-gap-s: 20px;
     --mgc-gap-m: 30px;
@@ -181,4 +182,37 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: var(--mgc-border-radius-l);
+}
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+
+    #navMenu {
+        gap: var(--mgc-gap-xs);
+    }
+}
+
+
+@media (max-width: 900px)
+{
+    .div-search-container {
+        width: 100%
+    }
+    #navMenu {
+        display: none;
+    }
+    .icons-list-header {
+        display: none;
+    }
+    #logoPhinterest {
+        margin-right: var(--mgc-padding-xs);
+    }
+}
+
+@media (max-width: 600px)
+{
+    /* .div-search-container {
+        display: none;
+    } */
 }
